@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+
+            <button data-copy>
+
+                <span data-copyMsg></span>
+                
+                <i class="fa-solid fa-copy"></i>
+                
+            </button>
+
+        </div>
+
+        <div class="input-container">
+
+            <!-- password length section -->
+
+            <div class="length-container">
+
+                <p>Password length</p>
+
+                <p data-lengthNumber>0</p>
+
+            </div>
+
+            <!-- slider -->
+
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider/>
+
+            <!-- checkboxes -->
+
+            <div>
+
+                <input type="checkbox" id="uppercase">
+
+                <label for="uppercase">Include uppercase Letters</label>
+
+            </div>
+
+            <div>
+
+                <input type="checkbox" id="lowercase">
+
+                <label for="uppercase">Include lowercase Letters</label>
+
+            </div>
+
+            <div>
+
+                <input type="checkbox" id="numbers">
+
+                <label for="uppercase">Include numbers</label>
+
+            </div>
+
+            <div>
+
+                <input type="checkbox" id="symbols">
+
+                <label for="uppercase">Include symbols</label>
+
+            </div>
+
+            <!-- strength section -->
+
+            <div class="strength-container">
+
+                <p>Strength</p>
+
+                <div data-indicator><i class="fa-solid fa-circle"></i></div>
+
+            </div>
+
+            <!-- generate password  -->
+
+            <button class="generateButton">Generate Password</button>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/b1634c49aa.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
